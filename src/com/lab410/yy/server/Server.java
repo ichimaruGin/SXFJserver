@@ -1,4 +1,4 @@
-package com.lab410.yy.server;
+﻿package com.lab410.yy.server;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,7 +23,8 @@ import com.lab410.yy.para.JParameter;
 public class Server {
 	
 	private static final Logger logger = Logger.getLogger(Server.class);
-	private static final int[] ports = {6660,6661,6662,6663,6664,6665,6666,6667,6668};
+	//private static final int[] ports = {6660,6661,6662,6663,6664,6665,6666,6667,6668};
+	private static final int[] ports = {6668};
 	public static void start(int[] ports) throws IOException{
 		   IoAcceptor ioAcceptor = new NioSocketAcceptor();
 		   //acceptor.getFilterChain().addLast("logger", new LoggingFilter());
