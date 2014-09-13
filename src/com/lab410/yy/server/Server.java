@@ -1,4 +1,4 @@
-﻿package com.lab410.yy.server;
+package com.lab410.yy.server;
 
 import java.io.File;
 import java.io.FileInputStream;
