@@ -44,9 +44,6 @@ public class DataDecoder extends CumulativeProtocolDecoder{
 					//连接建立,发送第一帧数据请求命令
 					session.setAttribute("machineSno", frame.substring(8, 16));
 					checkSessionList(session, frame.substring(8, 16));
-					session.write(JParameter.DATA_REQUEST);
-				}else if("0003".equals(frame.substring(4,8))){
-					session.write(JParameter.DATA_HEART_BEAT);
 				}
 			}else{
 				System.out.println("非法数据帧头尾");
